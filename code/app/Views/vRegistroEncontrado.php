@@ -12,10 +12,8 @@
 	</style>
 </head>
 <body>
-
 	<br><br><br>
 	<h1><center>Registro encontrado</center></h1>
-
 	<form method="POST" action="../Home/actualizarRegistro">
 		<div>	
 		<center>ID: <input required type="text" name="id_usuario" id="id_usuario" value="<?php echo $id_usuario; ?>" readonly></center>

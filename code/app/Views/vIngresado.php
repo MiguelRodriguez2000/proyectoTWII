@@ -36,7 +36,6 @@
 			<button type="submit">Actualizar datos</button>
 		</form>
 	</div>
-
 	<br/><br/>
 </body>
 <footer>

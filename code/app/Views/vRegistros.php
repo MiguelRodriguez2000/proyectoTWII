@@ -5,8 +5,6 @@
 </head>
 <body>
 	<br>
-	
-
 	<div class="container">
 		<h1><center>Registros actuales</center></h1>
 		<table>
@@ -36,7 +34,6 @@
 			</tbody>
 		</table>
 	</div>
-
 	<br/><br/>
 </body>
 <footer>

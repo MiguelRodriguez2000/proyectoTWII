@@ -30,10 +30,8 @@ class Home extends BaseController
         $mUsuarios->insert($usuarioNuevo);
         $datoId['id_usuario'] = $mUsuarios->
         db->insertID();
-
         return view("vSuccess",$datoId );
     }
-
     public function mostrarRegistros(){
         $mUsuarios = new mUsuarios();
         $todos = $mUsuarios->findAll();
@@ -48,7 +46,6 @@ class Home extends BaseController
         $user= $mUsuarios->where('correo', $correo)->where('contra',$contra)->first();
         return view("vIngresado", $user);
     }
-
     public function actualizarRegistro(){
         $mUsuarios = new mUsuarios();
         $id_usuario = $_POST['id_usuario'];
@@ -62,15 +59,11 @@ class Home extends BaseController
         $mUsuarios->update($id_usuario, $usuarioActualizado);
         return $this->mostrarRegistros();
     }
-
     public function buscarRegistro(){
         $mUsuarios = new mUsuarios();
         $id_usuario = $_POST['id_usuario'];
         $usuario=$mUsuarios->find($id_usuario);
         return view("vRegistroEncontrado", $usuario);
     }
-
-    
-
 }
 
