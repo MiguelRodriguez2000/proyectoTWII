@@ -17,6 +17,7 @@
 					<th>Apellido</th>
 					<th>Rol</th>
 					<th>Estatus</th>
+					<th>Acciones</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -29,6 +30,7 @@
 					 <td><?php echo $usuario['apellido']; ?></td>
 					 <td><?php echo $usuario['rol']; ?></td>
 					 <td><?php echo $usuario['estatus']; ?></td>
+					 <td><a type="button" href="<?php echo base_url(); ?>/proyectoTWII/code/public/Home/eliminarRegistro/<?php echo $usuario['id_usuario']; ?>">Eliminar</a></td>
 				</tr>
 				<?php }?>
 			</tbody>
@@ -40,7 +42,7 @@
 	<br>
 	<div class="text-center text-dark p-3" style="background-color: rgba(0,0,0,0.2);">
 		<i class="bi bi-badge-cc"></i> 2022:
-		<a class="text-dark" href="<?php echo base_url();?> /HOME/bienvenida">Home</a>
+		<a class="text-dark" href="<?php echo base_url();?>/proyectoTWII/code/public/Home/bienvenida">Home</a>
 	</div>
 </footer>
 </html>

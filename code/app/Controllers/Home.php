@@ -65,5 +65,11 @@ class Home extends BaseController
         $usuario=$mUsuarios->find($id_usuario);
         return view("vRegistroEncontrado", $usuario);
     }
-}
+    public function eliminarRegistro($id){
+        $mUsuarios = new mUsuarios();
+        $id_usuario = $id;
+        $mUsuarios -> delete($id_usuario);
 
+        return $this->mostrarRegistros();
+    }
+}
